@@ -18,7 +18,7 @@ app.get("/hello", (req, res) => {
   res.sendFile(__dirname + "/public/" + "hello.html");
 });
 app.get("/data", (req, res) => {
-  //res.header("Content-Type", "application/json");
+  res.header("Content-Type", "application/json");
   res.sendFile(__dirname + "/public/" + "data.json");
 });
 app.post("/hello", (req, res) => {
